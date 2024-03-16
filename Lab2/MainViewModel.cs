@@ -95,6 +95,12 @@ namespace WpfApp.ViewModel
                     return;
                 }
 
+                if (_person.IsBirthday)
+                {
+                    MessageBox.Show("Happy birthday!", "Wow!", MessageBoxButton.OK, MessageBoxImage.Information);
+                    return;
+                }
+
                 string info = $"First Name: {_person.FirstName}\n" +
                               $"Last Name: {_person.LastName}\n" +
                               $"Email: {_person.Email}\n" +
